@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<a id="link" href="http://www.google.co.jp">Google</a>
+	<input type="button" value="クリック" onclick="getLinkTarget();">
+	<script>
+		function getLinkTarget() {
+			let link = document.getElementById('link');
+			let href = link.getAttribute('href');
+			alert(href);
+			link.setAttribute('href', 'http://www.yahoo.co.jp');
+			link.textContent = 'Yahooへ';
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<p id = "dom" onclick="replaceText();">テキスト</p>
+	<script>
+		function replaceText(){
+			let element = document.getElementById('dom');
+			//element.textContent = 'すだまさき';
+			element.innerHTML = '<a href="http://www.yahoo.co.jp">Yahooへ</a>';
+			
+		}
+	</script>
+</body>
+</html>

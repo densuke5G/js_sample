@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script>
+		function getInput() {
+			let textBox = document.getElementById('empId');
+			let empId = textBox.value;
+			alert(empId);
+		}
+	</script>
+	<form name="form">
+		社員ID<input type="text" name="empId" id="empId">
+		<input type="button" value="click!" onclick="getInput();">
+	</form>
+</body>
+</html>

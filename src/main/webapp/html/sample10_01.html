@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script>
+		function showDialog() {
+			alert(document.form.name.value+ 'さん、こんにちは！');
+		}
+	</script>
+	<form name="form">
+		<input type="text" name="name">
+		<input type="button" value="クリック" onclick="showDialog()">
+	</form>
+	
+</body>
+</html>
